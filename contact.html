@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | captured by capri</title>
+  <meta name="description" content="Get in touch with Capri about a photography session.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">captured by capri</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="services.html">Services + Pricing</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="inquiry.html">Session Inquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container split">
+        <img src="https://images-pw.pixieset.com/site/g5PMQe/vDWZO9/IMG_2641-aa300f7e-1500.jpg" alt="Session photo by Capri" loading="lazy">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h1>Contact me</h1>
+          <form data-formspree action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New message from your website">
+            <label>Name *<input type="text" name="name" required autocomplete="name"></label>
+            <label>Email address *<input type="email" name="email" required autocomplete="email"></label>
+            <label>Message *<textarea name="message" required></textarea></label>
+            <div><button class="button" type="submit">Send message</button></div>
+            <p class="form-status" role="status"></p>
+          </form>
+          <p class="form-note" style="margin-top: 24px">You can also message me on <a href="https://instagram.com/captured.by.capri">Instagram @captured.by.capri</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <h2>Get in touch</h2>
+    <a class="button" href="contact.html">Contact me</a>
+    <br>
+    <a class="social" href="https://instagram.com/captured.by.capri">Instagram @captured.by.capri</a>
+    <small>&copy; 2026 captured.by.capri</small>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

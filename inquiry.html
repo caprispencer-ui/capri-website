@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Session Inquiry | captured by capri</title>
+  <meta name="description" content="Book a senior, couples, family or branding session with Capri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">captured by capri</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="services.html">Services + Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="inquiry.html" aria-current="page">Session Inquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <span class="eyebrow">Session Inquiry</span>
+      <h1>Let's book your session</h1>
+      <p>For seniors, couples, families, branding and more.</p>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="narrow">
+        <form data-formspree action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New session inquiry">
+          <label>Name *<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email address *<input type="email" name="email" required autocomplete="email"></label>
+          <label>Phone number *<input type="tel" name="phone" required autocomplete="tel"></label>
+          <label>What type of session are you wanting to book? *
+            <select name="session_type" required><option value="">Choose one</option><option>Individual</option><option>Senior</option><option>Couple</option><option>Family</option><option>School Dance</option><option>Branding</option><option>Something else</option></select>
+          </label>
+          <label>Desired date and time *<input type="datetime-local" name="date_time" required></label>
+          <label>Location *<input type="text" name="location" required placeholder="Anywhere in Utah County"></label>
+          <div><button class="button" type="submit">Send message</button></div>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <h2>Get in touch</h2>
+    <a class="button" href="contact.html">Contact me</a>
+    <br>
+    <a class="social" href="https://instagram.com/captured.by.capri">Instagram @captured.by.capri</a>
+    <small>&copy; 2026 captured.by.capri</small>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
