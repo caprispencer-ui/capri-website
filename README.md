@@ -6,7 +6,7 @@ A copy of the captured by capri Pixieset site (capturedbycapri.mypixieset.com) a
 
 Every page is a normal `.html` file in this folder. Open one in a text editor (or on GitHub, click the pencil icon), change the words, and save. Colors and fonts live in `assets/style.css`.
 
-The photos currently load from Pixieset's image servers, so keep the Pixieset photos up for now. To host a photo here instead, put it in `assets/photos/` and change its `src` to `assets/photos/your-photo.jpg`.
+Photos live in `assets/photos/`. To add or swap one, upload it there and point the page's `src` at `assets/photos/your-photo.jpg`.
 
 ## Turning on the forms
 
