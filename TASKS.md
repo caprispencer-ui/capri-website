@@ -9,10 +9,7 @@
 - [ ] **Create a Google Business Profile** - biggest boost for "photographer near me" and Maps results
   - https://business.google.com, category "Photographer", choose that you serve customers at their location, set service area to Utah County, hide your address
   - Add the website link, photos and prices, and ask past clients for Google reviews
-- [ ] **Activate the website forms** - after the PR is merged and the site updates
-  - Fill out the Contact form on capturedbycapri.com once yourself
-  - Check caprispencer@gmail.com (and spam) for the FormSubmit email and click **Activate Form**
-  - Optional: send Claude the random code from that email so your address is hidden in the page source
+- [ ] **Optional: hide your email in the forms** - send Claude the random code from the FormSubmit activation email
 - [ ] **Finish NotFair plugin setup for cloud sessions** - do this at claude.ai/code in a browser or in the Desktop app (not the mobile app)
   - Click the cloud icon with the environment name (e.g. "Default") in the row above the message box, choose **Cloud**, hover the environment, click the gear icon
   - **Network access**: choose **Custom** (or **Limited**), add `notfair.co` under **Allowed domains**, keep **Allow package managers** ticked
@@ -30,5 +27,8 @@
 - [ ] **Re-run the SEO audit** once Search Console has a few weeks of data (`/notfair:seo-analysis`)
 
 ## Done
+
+- [x] ~~Activate the website forms~~ (2026-10-31)
+- [x] ~~Raise prices: individual/senior $75, couple $90, family $105, branding $115~~ (2026-10-31)
 
 - [x] ~~SEO fixes: titles, descriptions, sitemap, robots.txt, schema, share previews, faster images, alt text, favicon, 404 page, services FAQ~~ (2026-10-31)
