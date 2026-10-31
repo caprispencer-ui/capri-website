@@ -348,3 +348,10 @@ input:focus, select:focus, textarea:focus { outline: none; border-bottom-color: 
   .site-footer { padding: 48px 16px 32px; }
   blockquote { font-size: 23px; }
 }
+
+/* Services FAQ */
+.page-title p { margin: 16px auto 0; color: var(--muted); }
+.faq h2 { margin-bottom: 32px; }
+.faq h3 { font-size: 24px; margin: 32px 0 8px; }
+.faq p { margin: 0; }
+.faq a { color: var(--accent); }
