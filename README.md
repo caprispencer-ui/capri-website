@@ -16,12 +16,13 @@ Give every photo a short `alt` description of what's in it (e.g. "Family of five
 - `robots.txt` points search engines to the sitemap.
 - Each page's `<head>` has its own title, description, canonical link and share-preview (`og:`) tags. The homepage also has business details for Google (the `application/ld+json` block): update the prices there if they change.
 
-## Turning on the forms
+## Forms
 
-The Contact and Session Inquiry forms need a free [Formspree](https://formspree.io) form to email you. Until one is set up, the forms tell people to message you on Instagram.
+The Contact and Session Inquiry forms email caprispencer@gmail.com through [FormSubmit](https://formsubmit.co) (free, no account).
 
-1. Sign up at formspree.io and create a form. It gives you an ID like `xyzabcd`.
-2. In `contact.html` and `inquiry.html`, replace `YOUR_FORM_ID` with that ID.
+- **First time only:** submit either form once yourself. FormSubmit emails you an activation link; click it. Messages aren't delivered until you do.
+- **Hide your email address (optional):** the activation email includes a random code. Replace `caprispencer@gmail.com` in the `action="https://formsubmit.co/..."` line of `contact.html` and `inquiry.html` with that code.
+- If a message ever fails to send, the form tells people to message you on Instagram instead.
 
 ## Publishing
 

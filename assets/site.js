@@ -8,30 +8,28 @@ if (toggle && nav) {
   });
 }
 
-// Forms send through Formspree once a form ID is filled in (see README).
-// Until then, people are pointed to Instagram so no message is lost.
-document.querySelectorAll("form[data-formspree]").forEach((form) => {
+// Forms email Capri through FormSubmit (see README). If anything goes wrong,
+// people are pointed to Instagram so no message is lost.
+const fallback =
+  'Something went wrong. Please try again or message me on <a href="https://instagram.com/captured.by.capri">Instagram</a>.';
+
+document.querySelectorAll("form[data-formsubmit]").forEach((form) => {
   const status = form.querySelector(".form-status");
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    if (form.action.includes("YOUR_FORM_ID")) {
-      status.innerHTML =
-        'This form isn\'t connected yet. Please message me on <a href="https://instagram.com/captured.by.capri">Instagram</a> for now!';
-      return;
-    }
     status.textContent = "Sending...";
     try {
-      const response = await fetch(form.action, {
+      const response = await fetch(form.action.replace("formsubmit.co/", "formsubmit.co/ajax/"), {
         method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
       });
-      if (!response.ok) throw new Error();
+      const result = await response.json();
+      if (!response.ok || String(result.success) !== "true") throw new Error();
       form.reset();
       status.textContent = "Thank you! I'll be in touch soon.";
     } catch {
-      status.innerHTML =
-        'Something went wrong. Please try again or message me on <a href="https://instagram.com/captured.by.capri">Instagram</a>.';
+      status.innerHTML = fallback;
     }
   });
 });

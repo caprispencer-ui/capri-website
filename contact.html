@@ -47,8 +47,11 @@
         <div>
           <span class="eyebrow">Contact</span>
           <h1>Contact me</h1>
-          <form data-formspree action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form data-formsubmit action="https://formsubmit.co/caprispencer@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="New message from your website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label>Name *<input type="text" name="name" required autocomplete="name"></label>
             <label>Email address *<input type="email" name="email" required autocomplete="email"></label>
             <label>Message *<textarea name="message" required></textarea></label>
