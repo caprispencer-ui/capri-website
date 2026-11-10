@@ -6,7 +6,7 @@ A copy of the captured by capri Pixieset site (capturedbycapri.mypixieset.com) a
 
 Every page is a normal `.html` file in this folder. Open one in a text editor (or on GitHub, click the pencil icon), change the words, and save. Colors and fonts live in `assets/style.css`.
 
-Full-size photos live in `assets/photos/`. The pages load smaller, faster WebP copies from `assets/photos/web/` (about 1000px wide). To add or swap a photo, upload it to `assets/photos/`, then either ask Claude to make a web copy, or point the page's `src` at `assets/photos/your-photo.jpg` (it works, just loads slower).
+Full-size photos live in `assets/photos/`. The pages load smaller, faster WebP copies from `assets/photos/web/`: a 1000px-wide copy plus a 500px-wide `-500.webp` copy that phones load (via `srcset`). To add or swap a photo, upload it to `assets/photos/`, then either ask Claude to make a web copy, or point the page's `src` at `assets/photos/your-photo.jpg` (it works, just loads slower).
 
 Give every photo a short `alt` description of what's in it (e.g. "Family of five sitting in the grass by a pond"). Google Images uses it.
 

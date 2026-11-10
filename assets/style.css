@@ -4,6 +4,7 @@
   --text: #2b2622;
   --muted: #6f655c;
   --accent: #9c7b5f;
+  --accent-text: #7f6248; /* accent darkened for readable text */
   --line: #ddd2c5;
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
@@ -67,7 +68,7 @@ a { color: inherit; }
 }
 
 .site-nav a:hover,
-.site-nav a[aria-current="page"] { color: var(--accent); }
+.site-nav a[aria-current="page"] { color: var(--accent-text); }
 
 .nav-toggle {
   display: none;
@@ -354,7 +355,10 @@ input:focus, select:focus, textarea:focus { outline: none; border-bottom-color: 
 .faq h2 { margin-bottom: 32px; }
 .faq h3 { font-size: 24px; margin: 32px 0 8px; }
 .faq p { margin: 0; }
-.faq a { color: var(--accent); }
+.faq a { color: var(--accent-text); }
 
 /* Spam trap field on forms: hidden from people, bots fill it in */
 .honey { position: absolute; left: -9999px; }
+
+/* Card and package titles are h2 for heading order, styled like h3 */
+.card h2, .package h2 { font-size: 28px; }
