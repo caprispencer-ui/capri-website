@@ -1,3 +1,14 @@
+/* Arial scaled to Jost's width so text doesn't re-wrap (and shift the page)
+   when the web font finishes loading */
+@font-face {
+  font-family: "Jost Fallback";
+  src: local("Arial"), local("ArialMT"), local("Liberation Sans");
+  size-adjust: 92.4%;
+  ascent-override: 115.8%;
+  descent-override: 41.1%;
+  line-gap-override: 0%;
+}
+
 :root {
   --bg: #f8f4ef;
   --bg-alt: #efe7dd;
@@ -7,7 +18,7 @@
   --accent-text: #7f6248; /* accent darkened for readable text */
   --line: #ddd2c5;
   --serif: "Cormorant Garamond", Georgia, serif;
-  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Jost", "Jost Fallback", "Helvetica Neue", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
